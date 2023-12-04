@@ -10,12 +10,15 @@ import AdminTransaction from './pages/Admin/AdminTransaction/AdminTransaction';
 import AdminMember from './pages/Admin/AdminMember/AdminMember';
 
 import SignIn from "./pages/Login/SignIn/SignIn";
+import SignUp from "./pages/Login/SignUp/SignUp";
+
 function App() {
   return (
     <div className="App">
       <Routes>
         
         <Route path="/temp" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Note />} />
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/adminlogin" element={<AdminLogin />} />
