@@ -8,10 +8,14 @@ import AdminLogin from './pages/AdminLogin/AdminLogin';
 import AdminPost from './pages/Admin/AdminPost/AdminPost';
 import AdminTransaction from './pages/Admin/AdminTransaction/AdminTransaction';
 import AdminMember from './pages/Admin/AdminMember/AdminMember';
+
+import SignIn from "./pages/Login/SignIn/SignIn";
 function App() {
   return (
     <div className="App">
       <Routes>
+        
+        <Route path="/temp" element={<SignIn />} />
         <Route path="/" element={<Note />} />
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/adminlogin" element={<AdminLogin />} />
