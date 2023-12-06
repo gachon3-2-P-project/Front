@@ -87,7 +87,7 @@ export default function SignIn() {
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
-               
+                style={{backgroundColor: "#004E96"}}
               >
                 로그인
               </Button>
@@ -105,7 +105,7 @@ export default function SignIn() {
               <Grid item>
               <Button 
                  variant="text"
-                 style={{color: "black", fontWeight: 'bold',  textDecoration: 'underline'}} >Admin</Button>
+                 style={{ fontWeight: 'bold',  textDecoration: 'underline'}} >Admin</Button>
               </Grid>
             </Grid>
             </Box>

@@ -1,31 +1,20 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Note from './pages/Note/Note';
-import Mypage from './pages/Mypage/Mypage';
-
-
-import AdminLogin from './pages/AdminLogin/AdminLogin';
-import AdminPost from './pages/Admin/AdminPost/AdminPost';
-import AdminTransaction from './pages/Admin/AdminTransaction/AdminTransaction';
-import AdminMember from './pages/Admin/AdminMember/AdminMember';
 
 import SignIn from "./pages/Login/SignIn/SignIn";
 import SignUp from "./pages/Login/SignUp/SignUp";
+import EmailAuth from "./pages/Login/EmailAuth/EmailAuth";
+
 
 function App() {
   return (
     <div className="App">
       <Routes>
         
-        <Route path="/temp" element={<SignIn />} />
+        <Route path="/" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/" element={<Note />} />
-        <Route path="/mypage" element={<Mypage />} />
-        <Route path="/adminlogin" element={<AdminLogin />} />
-
-        <Route path="/adminpost" element={<AdminPost />} />
-        <Route path="/admintransaction" element={<AdminTransaction />} />
-        <Route path="/adminmember" element={<AdminMember />} />
+        <Route path="/emailauth" element={<EmailAuth />} />
+         
       </Routes>
     </div>
   );

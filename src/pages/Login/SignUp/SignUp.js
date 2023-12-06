@@ -31,10 +31,10 @@ export default function SignUp() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            marginTop: '7.5rem'
+            marginTop: '7rem'
           }}
         >
-          <img src="/images/modangSide.png" width="60px" alt=''/>
+          <img src="/images/modangBack.png" width="60px" alt=''/>
           <Typography component="h1"  variant="h4" style={{ fontWeight: 'bold' }}>
             Sign up
           </Typography>
@@ -86,6 +86,7 @@ export default function SignUp() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              style={{backgroundColor: "#004E96"}}
             >
               회원가입
             </Button>
