@@ -7,12 +7,15 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
+import modangBack from "../../../assets/modangBack.png"
 
 
 
 const defaultTheme = createTheme();
 
 export default function SignUp() {
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -20,6 +23,12 @@ export default function SignUp() {
       email: data.get('email'),
       password: data.get('password'),
     });
+  };
+
+  const navigate = useNavigate();
+  
+  const handleSignUp = () => {
+    navigate('/emailauth');
   };
 
   return (
@@ -34,7 +43,7 @@ export default function SignUp() {
             marginTop: '7rem'
           }}
         >
-          <img src="/images/modangBack.png" width="60px" alt=''/>
+          <img src={modangBack} width="60px" alt=''/>
           <Typography component="h1"  variant="h4" style={{ fontWeight: 'bold' }}>
             Sign up
           </Typography>
@@ -87,6 +96,7 @@ export default function SignUp() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
               style={{backgroundColor: "#004E96"}}
+              onClick={handleSignUp}
             >
               회원가입
             </Button>

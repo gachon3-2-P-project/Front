@@ -12,7 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import modangSide from "../../../assets/modangSide.png"
 
 
 const defaultTheme = createTheme();
@@ -40,7 +40,7 @@ export default function EmailAuth() {
           }}
         >
          
-          <img src="/images/modangSide.png" width="60px" alt=''/>
+          <img src={modangSide} width="60px" alt=''/>
           <Grid item margin="2rem">
           <Typography component="h1"  variant="h5" style={{ fontWeight: 'bold' }}>
             이메일 인증 코드를 입력해주세요.
