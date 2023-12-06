@@ -6,6 +6,7 @@ import SignUp from "./pages/Login/SignUp/SignUp";
 import EmailAuth from "./pages/Login/EmailAuth/EmailAuth";
 
 
+
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/emailauth" element={<EmailAuth />} />
          
+       
       </Routes>
     </div>
   );
